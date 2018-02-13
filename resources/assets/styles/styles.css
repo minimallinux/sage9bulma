@@ -1,0 +1,540 @@
+/* lato-regular - latin */
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v14-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/lato-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/lato-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/lato-v14-latin-regular.svg#Lato') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*layout*/
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*header*/
+
+header {
+    background: transparent;
+    padding: 15px 20px;
+}
+
+
+/*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+
+header:before,
+header:after {
+    content: "";
+    display: table;
+}
+
+header:after {
+    clear: both;
+}
+
+
+/* For IE 6/7 (trigger hasLayout) */
+
+header {
+    zoom: 1;
+}
+
+a.js-btn {
+    float: right;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 28px;
+}
+
+a.js-btn:hover,
+a.js-btn:focus {
+    color: lightgray;
+    border-color: lightgray;
+}
+
+
+/*navigation*/
+
+#primary_nav ul {
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    background: transparent;
+    padding: 8px 0;
+}
+
+#primary_nav li a {
+    display: block;
+    padding: 0 10px;
+    color: darkgray;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+}
+
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+    color: lightgray;
+}
+
+
+/*nav media queries*/
+
+@media only screen and (min-width: 900px) {
+    a.js-btn {
+        display: none;
+    }
+    .wrapper {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+    #primary_nav li {
+        display: inline;
+    }
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 2px 10px;
+    }
+}
+/*Hover and display for Mobile*/
+@media only screen and (max-width: 899px) {
+    #primary_nav li:first-child a {
+        border-top: 1px solid #383838;
+    }
+    #primary_nav li:last-child a {
+        border-bottom: 1px solid #383838;
+    }
+    #primary_nav {
+        /*width: 50%;*/
+        display: none;
+    }
+    #primary_nav li a {
+        color: #fff;
+    }
+    #primary_nav li a:hover,
+    #primary_nav li a:focus {
+        background: whitesmoke;
+        color: #000;
+    }
+ #primary_nav {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms;
+}
+#primary_nav.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}   
+}
+/*Pages*/
+.map {
+    width: 100%;
+    height: 100%;
+}
+.page-header h1 {
+    display: none;
+}
+.page-bottom {
+    height: 50px;
+}
+.center {
+    justify-content: center;
+}
+.submit {
+    background: -moz-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000);
+    background: -webkit-gradient(linear, left top, left bottom, from(#a3a3a3), color-stop(0.50, #3b3b3b), color-stop(0.50, #242424), to(#000));
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: 1px solid #000;
+    -moz-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 1), 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.button.submit:hover,
+.button.submit:focus {
+    background: -moz-linear-gradient(top, #fff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.50, #ebebeb), color-stop(0.50, #dbdbdb), to(#b5b5b5));
+    border: 1px solid #949494;
+    -moz-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 2px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 2px rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 2px rgba(255, 255, 255, 1);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.2), 0 1px 0 rgba(255, 255, 255, 1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    color: #050505;
+}
+
+
+/*Front*/
+
+.hero.front {
+    background: #222 url(../images/bg-1.jpg) center;
+    background-size: cover;
+    height: auto;
+    border-radius: 0;
+    width: 100%;
+}
+
+.hero h1 {
+    padding: 20px;
+}
+
+.btn-custom {
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero p {
+    padding: 5px 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.intro {
+    margin-top: 130px;
+}
+
+.intro p {
+    color: rgba(255, 255, 255, 0.8)!important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cover1 .intro {
+    margin-top: 130px;
+}
+
+.cover1 .phone {
+    margin-top: 100px;
+}
+
+.cover1 {
+    margin-bottom: 140px;
+}
+
+.features.reasons .card {
+    padding-top: 30px;
+}
+
+.features.tools figure {
+    border: solid 1px lightgray;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.col-feature {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.rounded-circle {
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 6rem;
+    height: 6rem;
+    background: none;
+    border: 0.15rem solid #00897B;
+    border-radius: 50px;
+}
+
+.notification {
+    background: #3a3d51;
+    height: 62px!important;
+}
+
+.blue {
+    color: #00897B;
+}
+
+.features1 {
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.features {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.features1 hr {
+    display: block;
+    width: 12rem;
+    height: 0.3rem;
+    background-color: #dfe1e5;
+    margin: 2rem auto;
+}
+
+.features hr {
+    display: block;
+    width: 12rem;
+    height: 0.3rem;
+    background-color: #dfe1e5;
+    margin: 2rem auto;
+}
+
+.fa-phone {
+    padding-right: 10px;
+}
+
+.jumbotron {
+background: #f8f8f8!important;
+padding: 40px 20px 40px 20px;
+border-radius: 10px;
+}
+/*Others*/
+.hero.page {
+    background: #222 url(../images/bg-1.jpg) center;
+    background-size: cover;
+    height: auto;
+    border-radius: 0;
+    width: 100%;
+}
+.cover2 {
+    margin-bottom: 190px;
+    min-height: 23em;
+}
+.features #intro {
+    margin: 50px 0px;
+    padding: 30px 10px;
+    background: #f8f8f8;
+}
+/*App page*/
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Contact Page*/
+
+address p {
+    line-height: 1.5em;
+}
+.contact p a:hover {
+    color: #00897B;
+}
+
+.contact h4 {
+    margin-top: 20px;
+}
+/*Footer*/
+.footer h2 {
+    font-size: 1em;
+    color: whitesmoke;
+}
+.footer {
+    background: #2b2d34;
+    width: 100%;
+    color: #fff;
+    padding-top: 4rem;
+    padding-bottom: .5rem;
+}
+.footer .container-fluid {
+    padding: 0;
+}
+.footer .divider {
+    background: #46484a;
+    width: 100%;
+    height: .1rem;
+    margin: 2rem 0 1.5rem 0;
+}
+.footer ul.nav-footer {
+    float: left!important;
+    padding: 0;
+    width: 100%;
+}
+
+.footer ul.nav-footer li {
+    display: block;
+    float: left;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.footer ul.nav-footer .nav-link {
+    color: #a0a0a0;
+    padding: 0;
+}
+
+.footer ul.nav-footer .nav-link:hover {
+    color: #00897B;
+}
+.footer li a:hover {
+    color: #00897B!important;
+}
+
+.footer h2 {
+    padding: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.copyright p a {
+    color: #a0a0a0;
+}
+
+.copyright p a:hover {
+    color: #00897B;
+}
+
+.copyright p {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 899px) {
+    .footer .nav-footer {
+        width: auto;
+        display: inline;
+    }
+    .media {
+        text-align: center;
+    }
+    .media .img {
+        justify-content: center!important;
+    }
+    .links {
+        text-align: center;
+    }
+    .links .nav-footer ul:last-child {
+        margin-bottom: 20px;
+    }
+    .bottom {
+        background: #2b2d34!important;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        text-align: center;
+    }
+    .form h1,
+    .form h3 {
+    text-align: center;
+    }
+}
+
+
+/* CSS fix mobile view */
+
+@media (max-width: 899px) {
+    /* since img is an inline element we can use margin: 0 auto;  */
+    .widget.media_image-3.widget_media_image img {
+        margin: 0 auto;
+    }
+    /*
+    * we use flex for horizontally arrange footer copyright area columns.
+    * It's doesn't matter to use flex see https://caniuse.com/#search=flex for check browser support.
+    */
+    .footer .container:last-child .columns {
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        align-items: center;
+    }
+    /*
+    * We also need to set 'display: flex;' to lsi-social-icons for wrap icons
+    * '!important' for prevent conflicts
+    */
+    .footer .lsi-social-icons {
+        display: -webkit-flex !important;
+        display: -moz-box !important;
+        display: flex !important;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    /* Polyfills */
+    .footer h3 {
+        font-weight: normal;
+        font-size: 1.2em;
+    }
+    .footer li a {
+        color: #6f7280;
+        font-size: 1em;
+    }
+    .footer li a:hover {
+        color: #00897B!important;
+    }
+    .footer .column {
+      padding: .75rem !important;
+    }
+    .footer>.container {
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        padding: 12px;
+        margin-bottom: -5px;
+    }
+    .footer>.container>.columns .column.links {
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+    }
+    .footer > .container > .columns {
+        -webkit-flex-grow: 1;
+           -moz-box-flex: 1;
+                flex-grow: 1;
+    }
+    .footer .columns .column>section {
+        margin: 0 auto !important;
+    }
+    /* =====================================================
+    * If you need to change footer copyright text with css
+    * then you can uncomment below lines
+    * =====================================================
+    */
+    /* .footer .copyright p {
+      display: none;
+    } */
+    /* If you need to add HTML code to `content` then please refer this
+    * https://stackoverflow.com/a/190412/4737012
+    */
+    /*
+    .footer .copyright:before {
+        content: 'Copyright © 2018 YourStartup. All Rights Reserved.';
+    } */
+    /* ===================================================== */
+}
