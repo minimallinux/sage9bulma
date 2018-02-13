@@ -4,7 +4,7 @@
 [![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/roots/sage)
 
 Sage 9 with Bulma CSS, custom templates for pages hard code templates and select in WP-Admin (leave page blank), big Bulma footer can put different footer image on different pages. toggle different header in app.blade one for front page and one for the rest, hamburger mobile nav (see package.json), so dont need Bulmas rather tempremental navwalker.
-Extra widgets added for footer etc. Uses Font Awesome 4.7
+Extra widgets added for footer etc. Uses Font Awesome 4.7 via CDN link in head.blade because its a pain in Sage 9.
 
 As Bulma is just a CSS file, easy to remove and add different framework.
 
