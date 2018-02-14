@@ -46,14 +46,11 @@ header:after {
 header:after {
     clear: both;
 }
-
-
 /* For IE 6/7 (trigger hasLayout) */
 
 header {
     zoom: 1;
 }
-
 a.hamburger {
     float: right;
     color: whitesmoke;
@@ -61,24 +58,19 @@ a.hamburger {
     padding: 0 10px;
     font-size: 28px;
 }
-
 a.hamburger:hover,
 a.hamburger:focus {
     color: lightgray;
     border-color: lightgray;
 }
-
-
 /*navigation*/
-
-#primary_nav ul {
+.primary_nav ul {
     font-family: 'Lato', sans-serif;
     list-style: none;
     background: transparent;
     padding: 8px 0;
 }
-
-#primary_nav li a {
+.primary_nav li a {
     display: block;
     padding: 0 10px;
     color: darkgray;
@@ -88,15 +80,11 @@ a.hamburger:focus {
     height: 2em;
     border-bottom: 1px solid #383838;
 }
-
-#primary_nav li a:hover,
-#primary_nav li a:focus {
+.primary_nav li a:hover,
+.primary_nav li a:focus {
     color: lightgray;
 }
-
-
 /*nav media queries*/
-
 @media only screen and (min-width: 900px) {
     a.hamburger {
         display: none;
@@ -106,16 +94,16 @@ a.hamburger:focus {
         width: 100%;
         margin: auto;
     }
-    #primary_nav {
+    .primary_nav {
         position: absolute;
         top: 5px;
         right: 10px;
         background: none;
     }
-    #primary_nav li {
+    .primary_nav li {
         display: inline;
     }
-    #primary_nav li a {
+    .primary_nav li a {
         float: left;
         border: none;
         padding: 2px 10px;
@@ -123,21 +111,21 @@ a.hamburger:focus {
 }
 /*Hover and display for Mobile*/
 @media only screen and (max-width: 899px) {
-    #primary_nav li:first-child a {
+    .primary_nav li:first-child a {
         border-top: 1px solid #383838;
     }
-    #primary_nav li:last-child a {
+    .primary_nav li:last-child a {
         border-bottom: 1px solid #383838;
     }
-    #primary_nav {
-        /*width: 50%;*/
+    /* .primary_nav {
+        width: 50%;
         display: none;
-    }
-    #primary_nav li a {
+    }*/
+    .primary_nav li a {
         color: #fff;
     }
-    #primary_nav li a:hover,
-    #primary_nav li a:focus {
+    .primary_nav li a:hover,
+    .primary_nav li a:focus {
         background: whitesmoke;
         color: #000;
     }
@@ -149,7 +137,7 @@ a.hamburger:focus {
 #primary_nav.is-active {
   opacity: 1;
   pointer-events: auto;
-}   
+} 
 }
 /*Pages*/
 .map {
