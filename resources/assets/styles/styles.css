@@ -85,7 +85,7 @@ a.hamburger:focus {
     color: lightgray;
 }
 /*nav media queries*/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 920px) {
     a.hamburger {
         display: none;
     }
@@ -94,23 +94,27 @@ a.hamburger:focus {
         width: 100%;
         margin: auto;
     }
-    .primary_nav {
+  #primary_nav {
+    opacity: 1;
+    pointer-events: auto;
+  }
+ .primary_nav {
         position: absolute;
         top: 5px;
         right: 10px;
         background: none;
     }
-    .primary_nav li {
+  .primary_nav li {
         display: inline;
     }
-    .primary_nav li a {
+  .primary_nav li a {
         float: left;
         border: none;
         padding: 2px 10px;
     }
 }
 /*Hover and display for Mobile*/
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 919px) {
     .primary_nav li:first-child a {
         border-top: 1px solid #383838;
     }
