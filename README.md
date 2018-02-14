@@ -40,7 +40,7 @@ Make sure all dependencies have been installed before moving on:
 ## Theme installation
 $ npm install
 & composer install
-&yarn && yarm build
+&yarn && yarn build
 
 ## Theme structure
 
