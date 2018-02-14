@@ -2,7 +2,7 @@
 <div class="wrapper">
       <header>
        <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/logo.png')"></a>
-       <a class="js-btn hamburger hamburger--vortex"><span class="hamburger-box">
+       <a class="hamburger hamburger--vortex"><span class="hamburger-box">
         <span class="hamburger-inner"></span>
         </span></i></a>
        </header>

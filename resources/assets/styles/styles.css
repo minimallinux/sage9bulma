@@ -54,7 +54,7 @@ header {
     zoom: 1;
 }
 
-a.js-btn {
+a.hamburger {
     float: right;
     color: whitesmoke;
     text-decoration: none;
@@ -62,8 +62,8 @@ a.js-btn {
     font-size: 28px;
 }
 
-a.js-btn:hover,
-a.js-btn:focus {
+a.hamburger:hover,
+a.hamburger:focus {
     color: lightgray;
     border-color: lightgray;
 }
@@ -98,7 +98,7 @@ a.js-btn:focus {
 /*nav media queries*/
 
 @media only screen and (min-width: 900px) {
-    a.js-btn {
+    a.hamburger {
         display: none;
     }
     .wrapper {
@@ -141,7 +141,7 @@ a.js-btn:focus {
         background: whitesmoke;
         color: #000;
     }
- #primary_nav {
+#primary_nav {
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms;
