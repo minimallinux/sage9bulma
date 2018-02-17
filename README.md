@@ -42,6 +42,8 @@ $ npm install
 & composer install
 &yarn && yarn build
 
+Dont forget to make upload and uploads/cache directories in the WP installation or you will get Illuminate errors.
+
 ## Theme structure
 
 ```shell
