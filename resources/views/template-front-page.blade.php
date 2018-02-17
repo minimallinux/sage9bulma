@@ -1,4 +1,9 @@
-{{-- Template Name: Front Page --}} @extends('layouts.app') @section('content') @while(have_posts()) @php(the_post())
+{{--
+  Template Name: Front Page
+--}}
+@extends('layouts.app')
+@section('content')
+@while(have_posts()) @php(the_post())
 <section class="features1">
 	<div class="container">
 		<div class="columns">
