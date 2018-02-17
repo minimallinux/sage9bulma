@@ -20,6 +20,7 @@
         @endif
       </div>
     </div>
+   @include('partials.footer')
     @php(wp_footer())
   </body>
 </html>

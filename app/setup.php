@@ -28,6 +28,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
+    add_theme_support('woocommerce');
 
     /**
      * Enable plugins to manage the document title
@@ -91,21 +92,6 @@ add_action('widgets_init', function () {
         'name'          => __('Image Footer', 'sage'),
         'id'            => 'image-sidebar-footer',
         'description' => __( 'The Image footer widget area', 'sage' )
-    ] + $config);
-    register_sidebar([
-        'name'          => __('Image Footer2', 'sage'),
-        'id'            => 'image-sidebar-footer2',
-        'description' => __( 'The Image footer2 widget area', 'sage' )
-    ] + $config);
-     register_sidebar([
-        'name'          => __('Image Footer3', 'sage'),
-        'id'            => 'image-sidebar-footer3',
-        'description' => __( 'The Image footer3 widget area', 'sage' )
-    ] + $config);
-      register_sidebar([
-        'name'          => __('Image Footer4', 'sage'),
-        'id'            => 'image-sidebar-footer4',
-        'description' => __( 'The Image footer4 widget area', 'sage' )
     ] + $config);
     //Other footer widget areas
     //First footer widget area, located in the footer. Empty by default.

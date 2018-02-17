@@ -58,11 +58,6 @@ a.hamburger {
     padding: 0 10px;
     font-size: 28px;
 }
-a.hamburger:hover,
-a.hamburger:focus {
-    color: lightgray;
-    border-color: lightgray;
-}
 /*navigation*/
 .primary_nav ul {
     font-family: 'Lato', sans-serif;
@@ -78,15 +73,14 @@ a.hamburger:focus {
     font-weight: bold;
     line-height: 2em;
     height: 2em;
-    border-bottom: 1px solid #383838;
 }
 .primary_nav li a:hover,
 .primary_nav li a:focus {
     color: lightgray;
 }
-/*nav media queries*/
+/*nav media query*/
 @media only screen and (min-width: 920px) {
-    a.hamburger {
+     a.hamburger {
         display: none;
     }
     .wrapper {
@@ -112,36 +106,6 @@ a.hamburger:focus {
         border: none;
         padding: 2px 10px;
     }
-}
-/*Hover and display for Mobile*/
-@media only screen and (max-width: 919px) {
-    .primary_nav li:first-child a {
-        border-top: 1px solid #383838;
-    }
-    .primary_nav li:last-child a {
-        border-bottom: 1px solid #383838;
-    }
-    /* .primary_nav {
-        width: 50%;
-        display: none;
-    }*/
-    .primary_nav li a {
-        color: #fff;
-    }
-    .primary_nav li a:hover,
-    .primary_nav li a:focus {
-        background: whitesmoke;
-        color: #000;
-    }
-#primary_nav {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 300ms;
-}
-#primary_nav.is-active {
-  opacity: 1;
-  pointer-events: auto;
-} 
 }
 /*Pages*/
 .map {
@@ -351,14 +315,15 @@ address p {
     margin-top: 20px;
 }
 /*Footer*/
+
 .footer h2 {
     font-size: 1em;
     color: whitesmoke;
 }
 .footer {
     background: #2b2d34;
-    width: 100%;
     color: #fff;
+    width: 100%;
     padding-top: 4rem;
     padding-bottom: .5rem;
 }
@@ -413,8 +378,49 @@ address p {
     font-size: 0.9em;
 }
 
-@media screen and (max-width: 899px) {
-    .footer .nav-footer {
+@media screen and (max-width: 919px) {
+    .form h1,
+    .form h3 {
+    text-align: center;
+    }
+/*Nav*/
+  header {
+  padding:  10px;
+}  
+.primary_nav li:first-child a {
+        border-top: 1px solid #222;
+        border-left: 1px solid #222;
+        border-right: 1px solid#222;
+    }
+   .primary_nav li a {
+        background: #323232;
+        border-radius: 10px;
+        border-top: 1px solid #222;
+        border-left: 1px solid #222;
+        border-right: 1px solid #222;
+        color: lightgrey!important;
+    }
+     .primary_nav li:last-child a {
+        border-bottom: 1px solid #222;
+    }
+    .primary_nav li a:hover,
+    .primary_nav li a:focus {
+        background: #404040;
+        color: #fff!important;
+    }
+
+#primary_nav {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms;
+}
+#primary_nav.is-active {
+  opacity: 1;
+  pointer-events: auto;
+} 
+/*Footer*/ 
+
+.footer .nav-footer {
         width: auto;
         display: inline;
     }
@@ -437,17 +443,7 @@ address p {
         display: flex;
         text-align: center;
     }
-    .form h1,
-    .form h3 {
-    text-align: center;
-    }
-}
-
-
-/* CSS fix mobile view */
-
-@media (max-width: 899px) {
-    /* since img is an inline element we can use margin: 0 auto;  */
+ /* since img is an inline element we can use margin: 0 auto;  */
     .widget.media_image-3.widget_media_image img {
         margin: 0 auto;
     }
@@ -528,5 +524,21 @@ address p {
     .footer .copyright:before {
         content: 'Copyright © 2018 YourStartup. All Rights Reserved.';
     } */
-    /* ===================================================== */
+/*Cover Container*/
+.cover1 .intro {
+    margin-top: 0px!important;
 }
+.cover1 .phone {
+    margin-top: 0px!important;
+} 
+.cover2 .intro {
+    margin-top: 0px!important;
+}
+}
+@media screen and (max-width: 751px) {
+.cover1 .phone {
+margin-top: 70px!important;
+}
+}
+
+

@@ -226,17 +226,21 @@
 				</div>
 		</section>  
 <section class="features">
-<div class="container">
+	<div class="row">
+		<div class="container" style="width:100%!important">
 			<div class="columns has-text-centered">
-<div class="column jumbotron is-12" >
-	<h1 class="title is-size-2 has-text-weight-light has-text-grey-dark">Get A Quote Now!</h1> 
-	       <p class="content is-medium">If you have any queries or just want to discuss project details for your business then get in touch right away. We will help you get started quiickly and we can help you capture the customers you may be missing out on!</p>
-	       <p><a class="button submit is-medium btn-custom" href="contact.html"><i class="fa fa-lg fa-phone"></i> Request A Call</a></p>
+				<div class="column jumbotron is-12">
+					<h1 class="title is-size-2 has-text-weight-light has-text-grey-dark">Order Your App Now!</h1>
+					<p class="content is-medium">Just enter your details and select !</p>
+					<p>
+						<a class="button submit is-medium btn-custom" href="http://vhost4.com/wordpress/index.php/contact/">
+							<i class="fa fa-lg fa-phone"></i> Request A Call</a>
+					</p>
+				</div>
+			</div>
 		</div>
-		</div>
-	</div>	
+		<div class="page-bottom"></div>
+	</div>
 </section>
-<div>&nbsp;</div>
-<div class="page-bottom"></div>
 @endwhile
 @endsection

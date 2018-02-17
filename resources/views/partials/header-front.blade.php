@@ -17,7 +17,7 @@
       <div class="column intro is-6 has-text-centered">
           <h1 class="title is-size-2 has-text-light has-text-weight-light is-uppercase">Custom Built Mobile Web Technology</h1>
                     <p class="content is-medium has-text-light has-text-weight-light">Well designed multiuser mobile applications and web properties for small businesses using the latest high tech solutions and applications.</p>
-                    <p><a class="button is-light is-large is-outlined btn-custom" href="#"><i class="fa fa-lg fa-phone"></i> Request A Call</a></p>
+                    <p><a class="button is-light is-large is-outlined btn-custom" href="http://vhost4.com/wordpress/index.php/contact/"><i class="fa fa-lg fa-phone"></i> Request A Call</a></p>
           </div>
     <div class="column phone center is-6 has-text-centered"><img width="310px" height="480px" src="@asset('images/phone.png')" alt=""></div>
 </div>

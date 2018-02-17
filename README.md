@@ -5,7 +5,7 @@
 
 ##P A McGowan
 
-Sage 9 with Bulma CSS, custom templates for pages hard code templates and select in WP-Admin (leave page blank), big Bulma footer can put different footer image on different pages. switch different header in app.blade, one for front page and one for the rest, hamburger mobile nav/primary_nav (see package.json), so dont need Bulmas rather tempremental navwalker at present.
+Sage 9 with Bulma CSS, custom templates for pages, hard code templates and select in WP-Admin (leave page blank), decent size Bulma footer. Switch different header in app.blade, one for front page and one for the rest, hamburger mobile nav/primary_nav (see package.json), so dont need Bulmas rather tempremental navwalker at present.
 
 Lots of extra widgets added for footer etc for links, ads or whatever. Uses Font Awesome 4.7 via CDN link in head.blade.
 
