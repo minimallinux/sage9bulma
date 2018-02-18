@@ -13,7 +13,7 @@
 				<p class="content is-medium">We build and produce web and ecommerce applications for small businesses from a mobile centric perspective.</p>
 			</div>
 		</div>
-		<div class="container">
+          <div class="container">
 			<div class="columns has-text-centered">
 				<div class="column is-3 col-feature">
 					<div class="rounded-circle justify-center">

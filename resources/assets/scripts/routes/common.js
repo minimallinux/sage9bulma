@@ -1,3 +1,4 @@
+import "../partials/ajax.js";
 export default {
   init() {
 // JavaScript to be fired on all pages
@@ -5,6 +6,9 @@ export default {
       $(this).toggleClass("is-active");
       $("#primary_nav").toggleClass("is-active");
 });
+//eslint-disable-next-line no-unused-vars      
+
+  
 },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -14,4 +18,5 @@ export default {
 
 
 
- //var el = document.querySelector('#primary_nav');   
+
+  

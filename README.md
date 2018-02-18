@@ -9,6 +9,8 @@ Sage 9 with Bulma CSS, custom templates for pages, hard code templates and selec
 
 Lots of extra widgets added for footer etc for links, ads or whatever. Uses Font Awesome 4.7 via CDN link in head.blade.
 
+Woocommerce and Advanced Custom Fields/Custom Menu Classes added.
+
 As Bulma is just a CSS file, easy to remove and add different framework.
 
 ##To do

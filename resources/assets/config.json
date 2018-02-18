@@ -7,7 +7,7 @@
     "customizer": [
       "./scripts/customizer.js"
     ]
-  },
+},
   "publicPath": "/wp-content/themes/sage9",
   "devUrl": "http://vhost4.com",
   "proxyUrl": "http://localhost:3000",
