@@ -46,11 +46,14 @@ header:after {
 header:after {
     clear: both;
 }
+
+
 /* For IE 6/7 (trigger hasLayout) */
 
 header {
     zoom: 1;
 }
+
 a.hamburger {
     float: right;
     color: whitesmoke;
@@ -58,13 +61,17 @@ a.hamburger {
     padding: 0 10px;
     font-size: 28px;
 }
+
+
 /*navigation*/
+
 .primary_nav ul {
     font-family: 'Lato', sans-serif;
     list-style: none;
     background: transparent;
     padding: 8px 0;
 }
+
 .primary_nav li a {
     display: block;
     padding: 0 10px;
@@ -74,13 +81,17 @@ a.hamburger {
     line-height: 2em;
     height: 2em;
 }
+
 .primary_nav li a:hover,
 .primary_nav li a:focus {
     color: lightgray;
 }
+
+
 /*nav media query*/
+
 @media only screen and (min-width: 920px) {
-     a.hamburger {
+    a.hamburger {
         display: none;
     }
     .wrapper {
@@ -88,39 +99,46 @@ a.hamburger {
         width: 100%;
         margin: auto;
     }
-  #primary_nav {
-    opacity: 1;
-    pointer-events: auto;
-  }
- .primary_nav {
+    #primary_nav {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .primary_nav {
         position: absolute;
         top: 5px;
         right: 10px;
         background: none;
     }
-  .primary_nav li {
+    .primary_nav li {
         display: inline;
     }
-  .primary_nav li a {
+    .primary_nav li a {
         float: left;
         border: none;
         padding: 2px 10px;
     }
 }
+
+
 /*Pages*/
+
 .map {
     width: 100%;
     height: 100%;
 }
+
 .page-header h1 {
     display: none;
 }
+
 .page-bottom {
     height: 50px;
 }
+
 .center {
     justify-content: center;
 }
+
 .submit {
     background: -moz-linear-gradient(top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000);
     background: -webkit-gradient(linear, left top, left bottom, from(#a3a3a3), color-stop(0.50, #3b3b3b), color-stop(0.50, #242424), to(#000));
@@ -266,11 +284,14 @@ a.hamburger {
 }
 
 .jumbotron {
-background: #f8f8f8!important;
-padding: 40px 20px 40px 20px;
-border-radius: 10px;
+    background: #f8f8f8!important;
+    padding: 40px 20px 40px 20px;
+    border-radius: 10px;
 }
+
+
 /*Others*/
+
 .hero.page {
     background: #222 url(../images/bg-1.jpg) center;
     background-size: cover;
@@ -278,16 +299,21 @@ border-radius: 10px;
     border-radius: 0;
     width: 100%;
 }
+
 .cover2 {
     margin-bottom: 190px;
     min-height: 23em;
 }
+
 .features #intro {
     margin: 50px 0px;
     padding: 30px 10px;
     background: #f8f8f8;
 }
+
+
 /*App page*/
+
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -295,6 +321,7 @@ border-radius: 10px;
     padding-top: 25px;
     height: 0;
 }
+
 .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -302,11 +329,14 @@ border-radius: 10px;
     width: 100%;
     height: 100%;
 }
+
+
 /*Contact Page*/
 
 address p {
     line-height: 1.5em;
 }
+
 .contact p a:hover {
     color: #00897B;
 }
@@ -315,11 +345,11 @@ address p {
     margin-top: 20px;
 }
 /*Footer*/
-
 .footer h2 {
     font-size: 1em;
     color: whitesmoke;
 }
+
 .footer {
     background: #2b2d34;
     color: #fff;
@@ -327,15 +357,18 @@ address p {
     padding-top: 4rem;
     padding-bottom: .5rem;
 }
+
 .footer .container-fluid {
     padding: 0;
 }
+
 .footer .divider {
     background: #46484a;
     width: 100%;
     height: .1rem;
     margin: 2rem 0 1.5rem 0;
 }
+
 .footer ul.nav-footer {
     float: left!important;
     padding: 0;
@@ -357,6 +390,7 @@ address p {
 .footer ul.nav-footer .nav-link:hover {
     color: #00897B;
 }
+
 .footer li a:hover {
     color: #00897B!important;
 }
@@ -381,18 +415,18 @@ address p {
 @media screen and (max-width: 919px) {
     .form h1,
     .form h3 {
-    text-align: center;
+        text-align: center;
     }
-/*Nav*/
-  header {
-  padding:  10px;
-}  
-.primary_nav li:first-child a {
+    /*Nav*/
+    header {
+        padding: 10px;
+    }
+    .primary_nav li:first-child a {
         border-top: 1px solid #222;
         border-left: 1px solid #222;
         border-right: 1px solid#222;
     }
-   .primary_nav li a {
+    .primary_nav li a {
         background: #323232;
         border-radius: 10px;
         border-top: 1px solid #222;
@@ -400,7 +434,7 @@ address p {
         border-right: 1px solid #222;
         color: lightgrey!important;
     }
-     .primary_nav li:last-child a {
+    .primary_nav li:last-child a {
         border-bottom: 1px solid #222;
     }
     .primary_nav li a:hover,
@@ -408,19 +442,19 @@ address p {
         background: #404040;
         color: #fff!important;
     }
-
-#primary_nav {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 300ms;
-}
-#primary_nav.is-active {
-  opacity: 1;
-  pointer-events: auto;
-} 
-/*Footer*/ 
-
-.footer .nav-footer {
+    #primary_nav {
+        opacity: 0;
+        pointer-events: none;
+		transition: opacity 300ms;
+		display: none;
+    }
+    #primary_nav.is-active {
+        opacity: 1;
+				pointer-events: auto;
+				display: block;
+    }
+    /*Footer*/
+    .footer .nav-footer {
         width: auto;
         display: inline;
     }
@@ -443,7 +477,7 @@ address p {
         display: flex;
         text-align: center;
     }
- /* since img is an inline element we can use margin: 0 auto;  */
+    /* since img is an inline element we can use margin: 0 auto;  */
     .widget.media_image-3.widget_media_image img {
         margin: 0 auto;
     }
@@ -487,7 +521,7 @@ address p {
         color: #00897B!important;
     }
     .footer .column {
-      padding: .75rem !important;
+        padding: .75rem !important;
     }
     .footer>.container {
         display: -webkit-flex;
@@ -495,16 +529,17 @@ address p {
         display: flex;
         padding: 12px;
         margin-bottom: -5px;
+        margin-top: -30px;
     }
     .footer>.container>.columns .column.links {
         display: -webkit-flex;
         display: -moz-box;
         display: flex;
     }
-    .footer > .container > .columns {
+    .footer>.container>.columns {
         -webkit-flex-grow: 1;
-           -moz-box-flex: 1;
-                flex-grow: 1;
+        -moz-box-flex: 1;
+        flex-grow: 1;
     }
     .footer .columns .column>section {
         margin: 0 auto !important;
@@ -524,21 +559,24 @@ address p {
     .footer .copyright:before {
         content: 'Copyright © 2018 YourStartup. All Rights Reserved.';
     } */
-/*Cover Container*/
-.cover1 .intro {
-    margin-top: 0px!important;
-}
-.cover1 .phone {
-    margin-top: 0px!important;
-} 
-.cover2 .intro {
-    margin-top: 0px!important;
-}
-}
-@media screen and (max-width: 751px) {
-.cover1 .phone {
-margin-top: 70px!important;
-}
+    /*Cover Container*/
+    .cover1 .intro {
+        margin-top: 80px!important;
+    }
+    .cover1 .phone {
+        margin-top: 80px!important;
+    }
+    .cover2 .intro {
+        margin-top: 80px!important;
+    }
 }
 
+@media screen and (max-width: 751px) {
+    .cover1 .phone {
+        margin-top: 70px!important;
+    }
+#primary_nav {
+
+}
+}
 
