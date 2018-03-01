@@ -75,10 +75,10 @@
   </div>
 </div>
 <div class="field">
-  <label class="label">Message Or Project Details</label>
-  <div class="control">
-    <textarea class="textarea" name="message" placeholder="Textarea"></textarea>
-  </div>
+<label class="label">Message Or Project Details</label>
+<div class="control">
+<textarea class="textarea" name="message" placeholder="Message Or Project Details"></textarea>
+</div>
 </div>
 <div class="field is-grouped">
 <div class="control">

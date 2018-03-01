@@ -79,8 +79,8 @@ add_action('widgets_init', function () {
     $config = [
         'before_widget' => '<section class="widget %1$s %2$s">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h3>',
-        'after_title'   => '</h3>'
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>'
     ];
     register_sidebar([
         'name'          => __('Primary', 'sage'),
@@ -203,6 +203,26 @@ function my_cmc_settings_dir( $dir ) {
 }
 // 4. Include CMC
 include_once( get_stylesheet_directory() . '/cmc/custom-menu-class.php' );
+// 1. customize Woocommerce path
+add_filter('woocommerce/settings/path', __NAMESPACE__. '\my_woocommerce_settings_path');
+function my_woocommerce_settings_path( $path ) {
+ // update path
+ $path = get_stylesheet_directory() . '/woocommerce/';
+ // return
+ return $path; 
+}
+// 2. customize Woocommerce dir
+add_filter('woocommerce/settings/dir', __NAMESPACE__ . '\my_woocommerce_settings_dir');
+function my_woocommerce_settings_dir( $dir ) {
+ // update path
+ $dir = get_stylesheet_directory_uri() . '/woocommerce/';
+ // return
+ return $dir; 
+}
+// 4. Include Woocommerce
+include_once( get_stylesheet_directory() . '/woocommerce/woocommerce.php' );
+
+
 
 
 
